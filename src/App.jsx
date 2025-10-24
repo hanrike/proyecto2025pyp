@@ -6,6 +6,7 @@ import Login from 'pages/Login';
 import Admin from 'pages/Admin';
 import Index from 'pages/Index';
 import PublicLayout from 'layouts/PublicLayout';
+import PrivateLayout from 'layouts/PrivateLayout';
 
 function App() {
   return (
@@ -22,7 +23,10 @@ function App() {
           <Route path='/' element={<Index />}/>
           </Route> 
           {/* Ruta privada o de administración */}
-        <Route path='/admin' element={<Admin />} />   
+          {/* pongo mi private Layout en mi panel de administracion es diferente mi layout al de login y registro  */}
+        <Route element={<PrivateLayout />}>
+          <Route path='/admin' element={<Admin />} />   
+        </Route>
         </Routes>
       </Router>
     </div>

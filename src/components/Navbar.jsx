@@ -3,10 +3,10 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div>
+    <div className='bg-red-400'>
       navbar
     </div>
   )
 }
 
-export default Navbar
+export default Navbar;

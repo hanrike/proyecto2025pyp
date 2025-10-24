@@ -6,9 +6,9 @@ import React from 'react'
 const PublicLayout = () => {
   {/**Lo primero que requiero es definir los componenetes que voy a tener*/}
   return (
-    <div className='flex flex-col justify-between h-screen'>
+    <div className='flex flex-col min-h-screen'>
       <Navbar/>
-      <main className='h-full overflow-y-scroll bg-blue-400'>
+      <main className='flex-grow bg-blue-400'>
         <Outlet/>
       </main>
       <Footer/>
