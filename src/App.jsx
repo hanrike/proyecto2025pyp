@@ -1,5 +1,5 @@
 import { BrowserRouter as Router,Routes,Route,Link } from 'react-router-dom';
-import 'styles/styles.css';
+import './styles/styles.css';
 //import './App.css';
 import Registro from 'pages/Registro';
 import Login from 'pages/Login';
@@ -12,7 +12,7 @@ import Clientes from 'pages/admin/Clientes';
 
 function App() {
   return (
-    <div>
+    <>
       {/**El Router se debe llamar cuando instalo la libreria y con ello poder gestionar rutas de mi aplicativo*/}
       <Router>
         {/**El Routes permite que sea una y solo una a la pagina que gestionamos para navegar*/}
@@ -33,7 +33,7 @@ function App() {
         </Route>
         </Routes>
       </Router>
-    </div>
+    </>
   );
 }
 
